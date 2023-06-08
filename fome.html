@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Solution</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- framework de classes css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lib de componentes tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <!-- lib de icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    <!-- lib de gráficos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="scripts/script.js" type="module"></script>
+
+    <noscript>
+        <script>alert("Por favor, ative o javascript nas configurações do seu navegador.");</script>
+    </noscript>
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900 transition-colors">
+
+    <nav class="bg-slate-100 border-slate-200 dark:bg-slate-900 transition-colors">
+        <div class="max-w-screen-2xl mx-auto p-4 flex flex-wrap items-center justify-between border-b dark:border-gray-800">
+            <a href="/index.html" class="flex">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">OPTI</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-lime-400">FOOD</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Abrir menu principal</span> 
+                <i class="fas fa-bars h-6 w-6"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <!-- Conteúdo gerado dinamicamente-->
+            </div>
+
+            <button id="theme-toggle" type="button" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full h-7 w-7  flex items-center justify-center">
+                <i id="theme-toggle-dark-icon" class="fas fa-moon hidden w-5 h-5"></i>
+                <i id="theme-toggle-light-icon" class="fas fa-sun hidden w-5 h-5"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="flex-grow-1">
+        <section id="hero">
+            <div class="mx-auto w-full max-w-screen-2xl px-4 py-6 lg:py-8 flex flex-col gap-4 dark:text-white leading-8">
+                
+                <h1 class="mb-8 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Fome</h1>
+
+                <p>
+                    A fome é um problema complexo que resulta de uma combinação de fatores, incluindo pobreza, desigualdade, conflitos, instabilidade política, mudanças climáticas e falta de acesso a recursos básicos.
+                    Enquanto algumas regiões do globo desfrutam de abundância e variedade de alimentos, muitos outros lugares estão mergulhados em uma crise de fome que compromete a saúde, o desenvolvimento e, em última instância, a vida das pessoas.
+                </p>    
+
+                <p>
+                    O contingente de pessoas afetadas pela fome, conforme os dados do relátorio mais recente da organização não governamental alemã <i>Welthungerhilfe</i>, aproxima de <span class="text-lime-500 font-medium"> 830 milhões de pessoas</span>. Em apenas um ano, houve um aumento de 18 milhões de pessoas em situação de fome.
+                </p>
+
+                <p>
+                    Os dados refletem um novo aumento pelo quarto ano consecutivo, sendo que os conflitos foram a principal causa de crises alimentares, assim como em 2022.
+                    Porém, em 27 países, 83,9 milhões de pessoas foram afetadas por choques econômicos. A pandemia de Covid-19, por exemplo, foi um dos principais fatores que levaram a esse aumento.
+                </p>
+
+                <p>
+                    O relatório também mostra o impacto da guerra na Ucrânia. Antes da Rússia invadir a Ucrânia, o preço dos alimentos já estava em seu nível mais alto em uma década devido a cadeias de suprimentos embaralhadas e eventos climáticos extremos. 
+                    Após o pico no primeiro semestre de 2022, os preços dos alimentos caíram, mas a guerra continuou a impactar indiretamente a segurança alimentar, com a inflação global e a desvalorização da moeda ucraniana.
+                    Estima-se que a guerra na Ucrânia continue a manteras taxas de fome altas nos próximos anos, e as Nações Unidas alertam que são necessárias ações para tornar os alimentos saudáveis ​​mais baratos e acessíveis. 
+                </p>
+
+                <p> 
+                    Os resultados da catástrofe de guerra, juntamente à pandemia do Covid-19, são empecilhos para a humanidade de diminuir a fome no mundo.
+                </p>
+
+                <div class="block p-6 bg-white border border-gray-200 rounded-lg my-3 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col gap-4">
+                    
+                    <h3 class="text-2xl font-extrabold tracking-tight leading-none text-lime-400 mb-2">Saiba mais</h3>
+    
+                    <h3 class="font-bold">Insegurança Alimentar x Fome</h3>
+    
+                    <p>
+                        A fome e a insegurança alimentar são conceitos relacionados, mas apresentam diferenças significativas em sua definição e abrangência. É importante diferenciá-las, uma vez que a fome refere-se à 
+                        privação grave e prolongada de alimentos, enquanto a insegurança alimentar abrange a incerteza quanto à disponibilidade e acesso a alimentos suficientes, seguros e nutritivos.
+                    </p>
+    
+                    <p>
+                        A insegurança alimentar, por sua vez, pode variar em intensidade, desde situações de insegurança alimentar leve, em que as pessoas podem ter acesso a alimentos, mas enfrentam incertezas sobre sua qualidade e quantidade, até situações de 
+                        insegurança alimentar grave, que incluem a fome propriamente dita.
+                    </p>
+    
+    
+                    <p>Se você deseja saber mais sobre a insegurança alimentar, clique <a href="/insegurancaAlimentar.html" class="text-lime-500 font-medium underline">aqui</a>.</p>
+                    
+    
+                </div>
+
+                <h3 class="text-2xl font-extrabold tracking-tight leading-none text-lime-400 mb-2 mt-4">Cenário Brasileiro</h3>
+                
+                <p>
+                    O Brasil se destaca como um dos principais produtores de alimentos globalmente. No entanto, é lamentável que também seja um dos países com maior desperdício de alimentos. De acordo com o IBGE, 
+                    aproximadamente 30% dos alimentos produzidos no país são jogados fora, totalizando cerca de 46 milhões de toneladas anualmente.
+                </p>
+
+                <p>
+                    Essa realidade acarreta perdas significativas tanto do ponto de vista econômico, estimadas em R$ 61,3 bilhões por ano, quanto do ponto de vista ambiental e social. 
+                    Consequentemente, o Brasil ocupa o 10º lugar no ranking dos países que mais desperdiçam alimentos, de acordo com dados da ONU.
+                </p>
+
+                <p>
+                    O desperdício ocorre em diversas fases da cadeia alimentar, desde a produção até o consumo. Na etapa de produção, os alimentos são perdidos devido a questões como planejamento inadequado, falta de 
+                    infraestrutura apropriada e condições climáticas adversas. Na distribuição e comercialização, ocorre o descarte de alimentos devido a critérios rigorosos de aparência e estética, além de problemas logísticos.
+                </p>
+
+                <h3 class="text-2xl font-extrabold tracking-tight leading-none text-lime-400 mt-4 mb-2">Combate à fome</h3>
+
+                <p>
+                    Uma das prioridades no combate à fome não é apenas ampliar o acesso à alimentação para todos, mas também ampliar o acesso a alimentos mais saudáveis.
+                    Segundo a ONU, entre 2013 e 2018, a ajuda global total ao setor agrícola e alimentar atingiu cerca de US$ 630 bilhões. No entanto, a maioria desses investimentos flui diretamente para os 
+                    agricultores por meio de políticas comerciais e subsídios, por exemplo: proteção à importação. A necessidade necessidade de redefinir a política de como essa ajuda é feita é urgente, uma vez que 
+                    as estatísticas mostram que a fome está aumentando.
+                </p>
+
+                <h3 class="text-2xl font-extrabold tracking-tight leading-none text-lime-400 mt-4 mb-2">Atuação da <i>OptiFood</i></h3>
+
+                <p>
+                    A <i>OptiFood</i> é uma empresa revolucionária, determinada a combater a fome global utilizando tecnologias de inteligência artificial generativa no ramo de logística alimentar.
+                    Através da nossa poderosa IA generativa, a <i>OptiAI</i>. 
+                    Nossa equipe de especialistas altamente qualificados e tecnologia de ponta garantem que cada passo da jornada dos alimentos 
+                    seja cuidadosamente gerenciado, desde a produção até a entrega aos consumidores finais.
+                </p>    
+                
+                <div class="flex flex-col sm:grid grid-cols-3 gap-12 my-8">
+                    
+                    <div class="px-6 py-12 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-[102%] transition ease-in">
+                        
+                        <div class="text-center text-5xl text-lime-500 mb-6">
+                            <i class="fas fa-tree"></i>
+                        </div>
+
+                        <h5 class=" text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-center mb-8">
+                            Agricultura Sustentável
+                        </h5>
+                        
+                        <ul class="list-none space-y-3 text-gray-500 dark:text-gray-300">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Otimização logística para agricultura sustentável: OptiAI otimiza rotas de transporte, alavancagem de emissões e impactos ambientais.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Otimização de recursos com base em análise de dados: OptiAI mapeia suprimentos com precisão, evitando desperdícios e promovendo uso eficiente de recursos agrícolas.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Gestão inteligente de armazenamento e redução de custos: OptiAI gerencia armazenamento de forma inteligente, olhando custos e impactos ambientais.</span>
+                            </li>
+                        </ul>
+
+                        <a href="/agriculturaSustentavel.html" class="font-bold ml-5 mt-4 inline-flex items-center text-blue-600 hover:underline text-lime-500">
+                            Veja mais em Agricultura Sustentável
+                            <i class="w-5 h-5 ml-2 fas fa-external-link-alt"></i>
+                        </a>
+                    </div>     
+
+                    <div class="px-6 py-12 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col  hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-[102%] transition ease-in">
+                        
+                        <div class="text-center text-5xl text-lime-500 mb-6">
+                            <i class="fas fa-pallet"></i>
+                        </div>
+
+                        <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-center mb-8">
+                            Gestão de Estoque
+                        </h5>
+                        
+                        <ul class="list-none space-y-3 text-gray-500 dark:text-gray-300">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>A <i>OptiAI</i> é capaz de reduzir o problema do desperdício ao proporcionar maior eficiência operacional por meio de tomada de decisões embasadas em dados.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Previsão de demanda aprimorada: Mapeamento preciso das necessidades de suprimentos por meio de análise de dados socioeconômicos e de mercado. </span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Acarreta em redução de custo, com a <i>OptiAI</i> o armazenamento pode ser gerido de forma inteligente a fim de reduzir custos com transportes e espaço.</span>
+                            </li>
+                        </ul>
+
+                        <a href="/insegurancaAlimentar.html" class="font-bold ml-5 mt-4 inline-flex items-center text-blue-600 hover:underline text-lime-500">
+                            Veja mais em Insegurança Alimentar
+                            <i class="w-5 h-5 ml-2 fas fa-external-link-alt"></i>
+                        </a>
+                    </div>   
+
+                    <div class="px-6 py-12 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-[102%] transition ease-in">
+                        
+                        <div class="text-center text-5xl text-lime-500 mb-6">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <h5 class=" text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-center mb-8">
+                            Divulgação de Dados
+                        </h5>
+                        
+                        <ul class="list-none space-y-3 text-gray-500 dark:text-gray-300">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>
+                                    Compartilhamos dados logísticos como localização de distribuidores, doadores de alimentos, disponibilidade de estoque e outras informações relevantes de parceiros que atuam contra a fome.*
+                                </span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Podem ser utilizados, por exemplo, para divulgação por meio de plataformas digitais ou por organizações físicas para facilitar o acesso ao alimento e evitar o desperdício.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Colaboração entre diferentes partes interessadas gerando um impacto social positivo.</span>
+                            </li>
+                        </ul>
+                    </div>     
+                </div>
+
+                <p class="text-gray-500 text-sm">
+                    *Os dados são compartilhados são somente aqueles autorizados por empresas parceiras.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <div class="mx-auto w-full max-w-screen-2xl px-4 py-6 lg:py-8 flex flex-col gap-4 dark:text-white leading-8">
+            
+            
+
+        </div>
+
+    </section>
+
+
+    <footer class="transition-colors">
+        <div class="mx-auto w-full max-w-screen-2xl px-4 ">
+            
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 " />
+            
+            <div class="sm:flex sm:items-center sm:justify-between mb-4">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                    © 2023 <a href="/index.html" class="hover:underline">Optifood</a>. Esta é uma marca fictícia e não possui registro jurídico.
+                </span>
+                <div class="flex space-x-6 sm:justify-center items-center">
+                    <div class="">
+                        <a href="/index.html" class="flex">
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">OPTI</span>
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap text-lime-400">FOOD</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Configuração de Tema -->
+    <script src="scripts/theme.js"></script>
+</body>
+</html>
